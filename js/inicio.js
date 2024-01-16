@@ -21,7 +21,7 @@ export const generarCardsProductos = (productos) => {
       let card = document.createElement("div");
       card.className = "producto";
       card.innerHTML = `
-      <div class="card" style="width: 18rem;">
+      <div class="card text-center" style="width: 18rem;">
       <img class="card-img-top" src="${imagen}" alt="Card image cap">
       <div class="card-body">
       <p class="card-title">${nombre}</p>
