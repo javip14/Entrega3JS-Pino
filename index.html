@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PAM PINS</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">PamPins</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Filtros:</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Precio
+            </a>
+            <ul class="dropdown-menu" id="filter__precio">
+              <li><a class="dropdown-item">Ascendente</a></li>
+              <li><a class="dropdown-item">Descendente</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Nombre
+            </a>
+            <ul class="dropdown-menu" id="filter__nombre">
+              <li><a class="dropdown-item">Ascendente</a></li>
+              <li><a class="dropdown-item">Descendente</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categoria
+            </a>
+            <ul class="dropdown-menu" id="filter__lista">
+              <li><a class="dropdown-item" href="#">Harry Potter</a></li>
+              <li><a class="dropdown-item" href="#">Fútbol</a></li>
+              <li><a class="dropdown-item">Simpsons</a></li>
+              <li><a class="dropdown-item" href="#">Todos</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="userLogin" class="nav-item"></div>
+    <div id="btnCarrito" style="margin-right: 20px">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart"
+        viewBox="0 0 16 16">
+        <path
+          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+      </svg>
+      <p id="contador__carrito"></p>
+    </div>
+  </nav>
+
+  <main>
+
+    <p>Busque su producto aqui</p>
+
+    <div id="productos" class="row row-cols-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5"></div>
+    <div id="carrito">
+      <table>
+        <thead>
+          <tr>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Unidades</th>
+            <th>Costo Unitario</th>
+            <th>Costo Total</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="items"></tbody>
+        <tfoot id="totales"></tfoot>
+      </table>
+    </div>
+    <input type="text" id="filter__input">
+    <script type="module" src="./db/productos.js"></script>
+    <script type="module" src="./db/usuarios.js"></script>
+    <script type="module" src="./js/inicio.js"></script>
+    <script type="module" src="./js/administrador.js"></script>
+    <script type="module" src="./js/carrito.js"></script>
+    <script type="module" src="./js/usuario.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+  </main>
+</body>
+
+</html>
