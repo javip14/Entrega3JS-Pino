@@ -69,7 +69,7 @@ const dibujarCarrito = () => {
         body.className = "producto__carrito"
 
         body.innerHTML = `
-        <th><img id="fotoProductoCarrito" src="${imagen}" class="card-img-top" style="width:40%; height: 30%"</th>
+        <th><img id="fotoProductoCarrito" src="${imagen}" class="card-img-top" style="width:30%; height: 30%"</th>
         <td>${nombre}</td>
         <td>${cantidad}</td>
         <td>${precio /cantidad}</td>

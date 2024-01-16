@@ -6,11 +6,12 @@
 
 #carrito{
     display: none;
+    font-size: 13px;
     position: fixed;
     top: 10%;
     right: 10%;
-    width: 30%;
+    width: 40%;
     height: auto;
-    background-color: whitesmoke;
+    background-color: white;
     z-index: 1001;
 }
