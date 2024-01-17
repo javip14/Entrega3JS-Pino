@@ -36,23 +36,23 @@ export const productos = [
   },
   {
     id: 6,
-    nombre: "Simpsons Family",
+    nombre: "Homero Rosquilla",
     precio: 350,
-    imagen:"https://http2.mlstatic.com/D_NQ_NP_2X_710910-MLC53363091709_012023-F.webp",
+    imagen:"https://img.fantaskycdn.com/0a6851d922da82d822a4d8f89956ed6c_1080x.jpeg",
     categoria:"Simpsons"
   },
   {
     id: 7,
-    nombre: "Lisa & Bart",
+    nombre: "Bart Tatuaje",
     precio: 350,
-    imagen:"https://http2.mlstatic.com/D_NQ_NP_2X_750531-MLC53363226126_012023-F.webp",
+    imagen:"https://img.fantaskycdn.com/adc264aa2aa9e47926280a96f340bcb2_1080x.jpeg",
     categoria:"Simpsons"
   },
   {
     id: 8,
-    nombre: "Simpsons sons",
+    nombre: "Lisa L",
     precio: 150,
-    imagen:"https://giftshopkawaii.cl/cdn/shop/products/IMG_2665_1800x.jpg?v=1601072814",
+    imagen:"https://img.fantaskycdn.com/5142b98bd78118b0b3d85b505638b47e_1080x.jpeg",
     categoria:"Simpsons"
   }
 ];
